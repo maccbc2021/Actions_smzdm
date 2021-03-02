@@ -27,7 +27,7 @@ jobs:
           SMZDM_COOKIE: ${{ secrets.SMZDM_COOKIE }}
           SMZDM_USER: ${{ secrets.SMZDM_USER }}
           SMZDM_PASS: ${{ secrets.SMZDM_PASS }}
-          SEND_KEY: ${{ secrets.SEND_KEY }}
+          SEND_KEY: ${{ secrets.PUSH_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
           TG_USER_ID: ${{ secrets.TG_USER_ID }}
 
