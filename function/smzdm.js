@@ -68,10 +68,20 @@ async function start() {
   // let body = "";
   if (fs.existsSync(path)) {
     body = fs.readFileSync(path, "utf8");
-    content = body.match(/title[\s\S]*options/).toString();
+    content = body.match(/title[\s\S]*options/);
   }
 
   if (PUSH_KEY) {
+    if (content.includes("Cookie")) {
+      await notify.sendNotify(
+        "什么值得买签到-" + new Date().toLocaleDateString(),
+        content
+      );
+      console.log("什么值得买签到-" + content);
+    } else {
+      console.log("什么值得买签到-" + content);
+    }
+  } else {
     await notify.sendNotify(
       "什么值得买签到-" + new Date().toLocaleDateString(),
       content

@@ -158,9 +158,7 @@ function serverNotify(text, desp, timeout = 2100) {
         url: SCKEY.includes("SCT")
           ? `https://sctapi.ftqq.com/${SCKEY}.send`
           : `https://sc.ftqq.com/${SCKEY}.send`,
-        body: SCKEY.includes("SCT")
-          ? `text=${text}&desp=${desp}`
-          : `text=${text}&desp=${desp}`,
+        body: `text=${text}&desp=${desp}`,
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
