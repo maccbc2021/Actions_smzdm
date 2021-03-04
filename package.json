@@ -18,10 +18,17 @@
   },
   "homepage": "https://github.com/jiegto/Actions_smzdm#readme",
   "dependencies": {
+<<<<<<< Updated upstream
     "axios": "^0.19.2",
     "crypto-js": "^4.0.0",
     "download": "^8.0.0",
     "got": "^11.7.0",
+=======
+    "axios": "^0.21.1",
+    "crypto-js": "^4.0.0",
+    "download": "^8.0.0",
+    "got": "^11.8.1",
+>>>>>>> Stashed changes
     "request": "^2.88.2",
     "request-promise": "^4.2.5",
     "tough-cookie": "^4.0.0"
