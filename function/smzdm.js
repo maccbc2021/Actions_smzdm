@@ -72,16 +72,6 @@ async function start() {
   }
 
   if (PUSH_KEY) {
-    if (content.includes("Cookie")) {
-      await notify.sendNotify(
-        "什么值得买签到-" + new Date().toLocaleDateString(),
-        content
-      );
-      console.log("什么值得买签到-" + content);
-    } else {
-      console.log("什么值得买签到-" + content);
-    }
-  } else {
     await notify.sendNotify(
       "什么值得买签到-" + new Date().toLocaleDateString(),
       content
