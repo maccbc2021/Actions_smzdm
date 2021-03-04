@@ -74,7 +74,7 @@ async function start() {
   if (PUSH_KEY) {
     await notify.sendNotify(
       "什么值得买签到-" + new Date().toLocaleDateString(),
-      content
+      content.toString()
     );
     console.log("什么值得买签到-" + content);
   }
