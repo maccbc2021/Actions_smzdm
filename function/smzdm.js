@@ -71,13 +71,11 @@ async function start() {
     content = body.match(/title[\s\S]*options/);
   }
 
-  if (PUSH_KEY) {
-    await notify.sendNotify(
-      "什么值得买签到-" + new Date().toLocaleDateString(),
-      content.toString()
-    );
-    console.log("什么值得买签到-" + content);
-  }
+  await notify.sendNotify(
+    "什么值得买签到-" + new Date().toLocaleDateString(),
+    content.toString()
+  );
+  console.log("什么值得买签到-" + content);
 
   //运行完成后，删除下载的文件
   console.log("运行完成后，删除下载的文件\n");
